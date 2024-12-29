@@ -1,0 +1,139 @@
+/* General Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure popup is above other content */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .popup-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .popup-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  .popup-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-submit:hover {
+    background-color: #45a049;
+  }
+  
+  .popup-close-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-close-btn:hover {
+    background-color: #e53935;
+  }
+  
+  /* Signup Popup Specific Styles */
+  .signup-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .signup-item {
+    margin-bottom: 20px;
+  }
+  
+  .signup-item-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .dropdown-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .dropdown-content {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .dropdown-form .popup-input {
+    margin-bottom: 10px;
+  }
+  
+  .popup-input[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  /* Show the popup when active */
+  .popup.active {
+    display: flex;
+    opacity: 1;
+  }
+  
+  /* Animation for the dropdown */
+  .dropdown-btn.active + .dropdown-content {
+    display: block;
+    animation: slideDown 0.3s ease;
+  }
+  
