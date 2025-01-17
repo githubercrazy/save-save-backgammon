@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./natfed.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="BACKGAMON LOGO" />
+        </div>
+        <div class="banner">
+          <img src="../images/banner.png" alt="ITS A BANNNEEEER" />
+        </div>
+        <div class="login-form">
+          <form>
+            <div class="registration">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+                required
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="button-container">
+              <button type="submit" class="login-btn">Login</button>
+              <button type="button" class="signup-btn">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <span class="dropbtn"><a href="/pages/aboutus.html">About Us</a></span>
+          </li>
+          <li>
+            <span class="dropbtn"><a href="/pages/nakrebi.html">Nakrebi da Gundebi</a></span>
+          </li>
+          <li>
+            <span class="dropbtn"><a href="/pages/calendar.html">Event Calendar</a></span>
+          </li>
+          <li>
+            <span class="dropbtn"><a href="/pages/tournament.html">Tournaments</a></span>
+          </li>
+          <li id="rankButton">
+            <span class="dropbtn"><a href="/pages/rating.html">Rating</a></span>
+          </li>
+          <li>
+            <span class="dropbtn"><a href="/pages/gallery.html">Gallery</a></span>
+          </li>
+          <li>
+            <span class="dropbtn"><a href="/pages/contact.html">Contact Us</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="popup signup-popup" id="signupPopup">
+        <div class="form-dropdown-content">
+          <h1>International Federation Creation</h1>
+          <form>
+            <input type="text" placeholder="Federation Name" required />
+            <input type="text" placeholder="Federation Logo" required />
+            <input class="logofile" type="file" placeholder="Federation Logo" required />
+            <input type="text" placeholder="Address" required />
+            <input type="text" placeholder="Country" required />
+            <input type="text" placeholder="City" required />
+            <input type="text" placeholder="Postal Code" required />
+            <input type="text" placeholder="Street Address" required />
+            <input type="text" placeholder="Phone" required />
+            <input
+              type="text"
+              placeholder="Country Code (auto)"
+              required
+              disabled
+            />
+            <input type="text" placeholder="WhatsApp" />
+            <input type="text" placeholder="Viber" />
+            <input type="email" placeholder="Email" required />
+            <input type="url" placeholder="Website" />
+            <input type="url" placeholder="Social Media Link 1" />
+            <input type="url" placeholder="Social Media Link 2" />
+            <input type="url" placeholder="Social Media Link 3" />
+            <input type="url" placeholder="Social Media Link 4" />
+            <input type="url" placeholder="Social Media Link 5" />
+            <input type="text" placeholder="Club President" required />
+            <input
+              type="text"
+              placeholder="Club President Number (hidden on a website)"
+            />
+            <input
+              type="email"
+              placeholder="Club President Email (hidden on a website)"
+            />
+            <input type="text" placeholder="Page Administrator/Manager" required />
+            <input
+              type="text"
+              placeholder="Admin/Manager Phone (hidden on a website)"
+            />
+            <input
+              type="email"
+              placeholder="Admin/Manager Email (hidden on a website)"
+            />
+            <input type="text" placeholder="Techincal Director" required />
+            <input
+              type="text"
+              placeholder="Techincal Director Phone (hidden on a website)"
+            />
+            <input
+              type="email"
+              placeholder="Techincal Director Email (hidden on a website)"
+            />
+            <input type="text" placeholder="Contact Person" required />
+            <input
+              type="text"
+              placeholder="Contact Person Phone (hidden on a website)"
+            />
+            <input
+              type="email"
+              placeholder="Contact Person Email (hidden on a website)"
+            />
+
+
+            
+          </form>
+          <button type="submit">Register</button>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Company Information</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="social-media">
+              <li><a href="#" class="social-icon facebook">Facebook</a></li>
+              <li><a href="#" class="social-icon twitter">Twitter</a></li>
+              <li><a href="#" class="social-icon wbgf">WBGF</a></li>
+              <li><a href="#" class="social-icon linkedin">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 [your country] Backgammon Federation . All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+      <script src="../h2h.js"></script>
+    </div>
+  </body>
+</html>

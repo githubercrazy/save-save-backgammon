@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Page</title>
+  <style>
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+    #content {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <button data-page="home">Home</button>
+    <button data-page="about">About</button>
+    <button data-page="services">Services</button>
+    <button data-page="contact">Contact</button>
+  </nav>
+
+  <!-- Content Area -->
+  <div id="content">
+    <h1>Welcome</h1>
+    <p>Click a menu item to see the content change dynamically!</p>
+  </div>
+
+  <script>
+    // Content Data
+    const pages = {
+      home: {
+        title: "Home Page",
+        content: "<p>Welcome to the Home Page!</p>"
+      },
+      about: {
+        title: "About Us",
+        content: "<p>Learn more about our company and team.</p>"
+      },
+      services: {
+        title: "Our Services",
+        content: "<p>Explore the services we offer to our customers.</p>"
+      },
+      contact: {
+        title: "Contact Us",
+        content: "<p>Get in touch with us for more information.</p>"
+      }
+    };
+
+    // DOM Elements
+    const contentDiv = document.getElementById("content");
+    const buttons = document.querySelectorAll("nav button");
+
+    // Event Listener for Navigation Buttons
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const page = button.dataset.page;
+        const pageData = pages[page];
+        
+        if (pageData) {
+          // Update Content
+          contentDiv.innerHTML = `<h1>${pageData.title}</h1>${pageData.content}`;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

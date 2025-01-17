@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background: rgb(244, 244, 244);
+  overflow-x: hidden;
+  margin: 0 20px;
+}
+
+.main-container {
+  padding: 0 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  max-width: 1180px;
+}
+
+.banner img {
+  padding: 0 40px;
+  width: 100%;
+}
+.registration {
+  display: flex;
+  flex-direction: column;
+}
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  display: flex;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropbtn a {
+  color: black;
+  cursor: pointer;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-form button {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #08573c;
+  color: white;
+  width: 100px;
+}
+
+/* Popup container */
+
+/* Popup content */
+.login-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  max-height: 80vh; /* Limit height of the popup */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* General Popup Styling */
+.popup {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Form Container */
+.popup form {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 15px; /* Space between form elements */
+  justify-items: center; /* Center items horizontally */
+  grid-auto-rows: auto; /* Let the rows adjust based on content height */
+}
+
+/* Form Header */
+.popup h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Inputs */
+.popup input[type="text"],
+.popup input[type="email"],
+.popup input[type="password"],
+.popup input[type="url"],
+.popup input[type="date"],
+.popup input[type="file"] {
+  width: 100%;
+  max-width: 100%; /* Make inputs fill the available column width */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Logo File Styling */
+.logofile {
+  max-width: 195px;
+  display: block;
+}
+
+/* Submit Button */
+.popup button[type="submit"] {
+  width: 100%;
+  max-width: 100%; /* Match button width to inputs */
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Close Button (Optional) */
+.popup button.close-popup {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.popup button.close-popup:hover {
+  background-color: #e53935;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(241, 241, 241);
+  max-width: 1090px;
+  margin: 10px auto;
+}
+
+.navigation ul {
+  gap: 80px;
+  display: flex;
+}
+
+.navigation li {
+  display: flex;
+  padding: 10px 0px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, linear 0.3s;
+  position: absolute;
+  top: 100%;
+  z-index: 20;
+  min-width: 220px;
+}
+
+.dropdown-content a {
+  display: flex;
+  padding: 12px 16px;
+  color: #07744e;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.navigation li:hover .dropdown-content,
+.navigation li .dropbtn:hover + .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.sub-dropdown {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation li:hover .sub-dropdown {
+  display: flex;
+  opacity: 1;
+}
+
+.footer-container {
+  background-color: #f1f1f1;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid black;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  gap: 10px;
+}
+
+/* Base style for social icons */
+.social-icon {
+  text-decoration: none;
+  color: #333;
+  /* Default color */
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+/* Specific colors for each platform on hover */
+.social-icon.facebook:hover {
+  color: #1877f2;
+  /* Facebook blue */
+}
+
+.social-icon.twitter:hover {
+  color: #1da1f2;
+  /* Twitter blue */
+}
+
+.social-icon.wbgf:hover {
+  color: #a1d400;
+  /* Instagram pink */
+}
+
+.social-icon.linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icon:active,
+.social-icon:focus {
+  outline: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ddd;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+}

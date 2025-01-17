@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main-container">
@@ -18,8 +18,20 @@
         <div class="login-form">
           <form>
             <div class="registration">
-              <input type="text" id="username" name="username" placeholder="Username" required />
-              <input type="password" id="password" name="password" placeholder="Password" required />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+                required
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
             </div>
             <div class="button-container">
               <button type="submit" class="login-btn">Login</button>
@@ -27,276 +39,112 @@
             </div>
           </form>
         </div>
-        
+
         <!-- Login Popup -->
         <div class="popup login-popup" id="loginPopup">
           <div class="login-popup-content">
             <h2>Login</h2>
             <form>
-              <input type="text" id="login-username" name="username" placeholder="Username" required />
-              <input type="password" id="login-password" name="password" placeholder="Password" required />
+              <input
+                type="text"
+                id="login-username"
+                name="username"
+                placeholder="Username"
+                required
+              />
+              <input
+                type="password"
+                id="login-password"
+                name="password"
+                placeholder="Password"
+                required
+              />
               <button type="submit">Login</button>
             </form>
             <button class="close-popup">Close</button>
           </div>
         </div>
-        
+
         <!-- Signup Popup -->
-<div class="popup signup-popup" id="signupPopup">
-  <div class="popup-content">
-    <h2>Sign Up</h2>
-    <ul>
-      <li>
-        <span class="list-title">International Federation</span>
-        <button class="dropdown-btn">Open</button>
-        <div class="form-dropdown-content">
-          <form>
-            <input type="text" placeholder="Federation Name" required />
-            <input type="text" placeholder="Federation Logo" required />
-            <input type="text" placeholder="Address" required />
-            <input type="text" placeholder="Country" required />
-            <input type="text" placeholder="City" required />
-            <input type="text" placeholder="Postal Code" required />
-            <input type="text" placeholder="Street Address" required />
-            <input type="text" placeholder="Phone" required />
-            <input type="text" placeholder="Country Code (auto)" required disabled />
-            <input type="text" placeholder="WhatsApp" />
-            <input type="text" placeholder="Viber" />
-            <input type="email" placeholder="Email" required />
-            <input type="url" placeholder="Website" />
-            <input type="url" placeholder="Social Media Link 1" />
-            <input type="url" placeholder="Social Media Link 2" />
-            <input type="url" placeholder="Social Media Link 3" />
-            <input type="url" placeholder="Social Media Link 4" />
-            <input type="url" placeholder="Social Media Link 5" />
-            
-            <input type="text" placeholder="Federation President" required />
-            <input type="text" placeholder="President Phone (hidden on site)" />
-            <input type="email" placeholder="President Email (hidden on site)" />
-            <input type="text" placeholder="Contact Person" required />
-            <input type="text" placeholder="Contact Phone (hidden on site)" />
-            <input type="email" placeholder="Contact Email (hidden on site)" />
-            <input type="text" placeholder="Page Administrator" required />
-            <input type="text" placeholder="Admin Phone (hidden on site)" />
-            <input type="email" placeholder="Admin Email (hidden on site)" />
+        <div class="popup signup-popup" id="signupPopup">
+          <div class="popup-content">
+            <h2>Sign Up</h2>
+            <ul>
+              <li>
+                <span class="list-title">International Federation</span>
+                <button class="dropdown-btn">
+                  <a href="/pages/intnatfederation.html">Open</a>
+                </button>
+              </li>
 
-            <input type="text" placeholder="Honorary President (optional)" />
-            <input type="text" placeholder="Honorary President Phone (hidden on site)" />
-            <input type="email" placeholder="Honorary President Email (hidden on site)" />
-            <input type="text" placeholder="General Secretary" />
-            <input type="text" placeholder="Secretary Phone (hidden on site)" />
-            <input type="email" placeholder="Secretary Email (hidden on site)" />
-            <input type="text" placeholder="Vice President" />
-            <input type="text" placeholder="Vice President Phone (hidden on site)" />
-            <input type="email" placeholder="Vice President Email (hidden on site)" />
-            
-            <button type="submit">Register</button>
-          </form>
+              <li>
+                <span class="list-title">National Federation</span>
+                <button class="dropdown-btn">
+                  <a href="/pages/natfed.html">Open</a>
+                </button>
+              </li>
+
+              <li>
+                <span class="list-title">Backgammon Club</span>
+                <button class="dropdown-btn">
+                  <a href="/pages/club.html">Open</a>
+                </button>
+              </li>
+
+              <li>
+                <span class="list-title">Player Registration</span>
+                <button class="dropdown-btn">
+                  <a href="/pages/player.html">Open</a>
+                </button>
+              </li>
+            </ul>
+            <button class="close-popup">Close</button>
+          </div>
         </div>
-      </li>
-
-      <li>
-        <span class="list-title">National Federation</span>
-        <button class="dropdown-btn">Open</button>
-        <div class="form-dropdown-content">
-          <form>
-            <input type="text" placeholder="Federation Name" required />
-            <input type="text" placeholder="Federation Logo" required />
-            <input type="text" placeholder="Address" required />
-            <input type="text" placeholder="Country" required />
-            <input type="text" placeholder="City" required />
-            <input type="text" placeholder="Postal Code" required />
-            <input type="text" placeholder="Street Address" required />
-            <input type="text" placeholder="Phone" required />
-            <input type="text" placeholder="Country Code (auto)" required disabled />
-            <input type="text" placeholder="WhatsApp" />
-            <input type="text" placeholder="Viber" />
-            <input type="email" placeholder="Email" required />
-            <input type="url" placeholder="Website" />
-            <input type="url" placeholder="Social Media Link 1" />
-            <input type="url" placeholder="Social Media Link 2" />
-            <input type="url" placeholder="Social Media Link 3" />
-            <input type="url" placeholder="Social Media Link 4" />
-            <input type="url" placeholder="Social Media Link 5" />
-
-            <input type="text" placeholder="Federation President" required />
-            <input type="text" placeholder="President Phone (hidden on site)" />
-            <input type="email" placeholder="President Email (hidden on site)" />
-            <input type="text" placeholder="Contact Person" required />
-            <input type="text" placeholder="Contact Phone (hidden on site)" />
-            <input type="email" placeholder="Contact Email (hidden on site)" />
-            <input type="text" placeholder="Page Administrator" required />
-            <input type="text" placeholder="Admin Phone (hidden on site)" />
-            <input type="email" placeholder="Admin Email (hidden on site)" />
-
-            <input type="text" placeholder="Honorary President (optional)" />
-            <input type="text" placeholder="Honorary President Phone (hidden on site)" />
-            <input type="email" placeholder="Honorary President Email (hidden on site)" />
-            <input type="text" placeholder="General Secretary" />
-            <input type="text" placeholder="Secretary Phone (hidden on site)" />
-            <input type="email" placeholder="Secretary Email (hidden on site)" />
-            <input type="text" placeholder="Vice President" />
-            <input type="text" placeholder="Vice President Phone (hidden on site)" />
-            <input type="email" placeholder="Vice President Email (hidden on site)" />
-            
-            <button type="submit">Register</button>
-          </form>
-        </div>
-      </li>
-
-      <li>
-        <span class="list-title">Backgammon Club</span>
-        <button class="dropdown-btn">Open</button>
-        <div class="form-dropdown-content">
-          <form>
-            <input type="text" placeholder="Club Name" required />
-            <input type="text" placeholder="Club Logo" required />
-            <input type="text" placeholder="Address" required />
-            <input type="text" placeholder="Country" required />
-            <input type="text" placeholder="City" required />
-            <input type="text" placeholder="Postal Code" required />
-            <input type="text" placeholder="Street Address" required />
-            <input type="text" placeholder="Phone" required />
-            <input type="text" placeholder="Country Code (auto)" required disabled />
-            <input type="text" placeholder="WhatsApp" />
-            <input type="text" placeholder="Viber" />
-            <input type="email" placeholder="Email" required />
-            <input type="url" placeholder="Website" />
-            <input type="url" placeholder="Social Media Link 1" />
-            <input type="url" placeholder="Social Media Link 2" />
-            <input type="url" placeholder="Social Media Link 3" />
-            <input type="url" placeholder="Social Media Link 4" />
-            <input type="url" placeholder="Social Media Link 5" />
-
-            <input type="text" placeholder="Club Director/President" required />
-            <input type="text" placeholder="Director/President Phone (hidden on site)" />
-            <input type="email" placeholder="Director/President Email (hidden on site)" />
-            <input type="text" placeholder="Manager/Administrator" />
-            <input type="text" placeholder="Manager Phone (hidden on site)" />
-            <input type="email" placeholder="Manager Email (hidden on site)" />
-            <input type="text" placeholder="Technical Director" />
-            <input type="text" placeholder="Technical Director Phone (hidden on site)" />
-            <input type="email" placeholder="Technical Director Email (hidden on site)" />
-            <input type="text" placeholder="Contact Person" required />
-            <input type="text" placeholder="Contact Phone (hidden on site)" />
-            <input type="email" placeholder="Contact Email (hidden on site)" />
-
-            <button type="submit">Register</button>
-          </form>
-        </div>
-      </li>
-
-      <li>
-        <span class="list-title">Player Registration</span>
-        <button class="dropdown-btn">Open</button>
-        <div class="form-dropdown-content">
-          <form>
-            <input type="text" placeholder="Country" required />
-            <input type="text" placeholder="First Name" required />
-            <input type="text" placeholder="Last Name" required />
-            <input type="text" placeholder="Phone" required />
-            <input type="email" placeholder="Email" required />
-            <input type="date" placeholder="Date of Birth" required />
-            <input type="text" placeholder="ID Number" />
-            <input type="text" placeholder="Ranking (auto)" disabled />
-            <input type="text" placeholder="Number (auto)" disabled />
-            <button type="submit">Register</button>
-          </form>
-        </div>
-      </li>
-    </ul>
-    <button class="close-popup">Close</button>
-  </div>
-</div>
-
-        
       </div>
       <div class="navigation">
         <ul>
-          <li class="main-nav">Home</li>
           <li>
-            <span class="dropbtn">Blog</span>
-            <div class="dropdown-content">
-              <a href="#">Blog guidelines</a>
-            </div>
+            <span class="dropbtn"><a href="/pages/aboutus.html">About Us</a></span>
           </li>
           <li>
-            <span class="dropbtn">Join</span>
-            <div class="dropdown-content">
-              <a href="#">Benefits</a>
-              <a href="#">Apply to join</a>
-              <a href="#">Youth Registration</a>
-            </div>
+            <span class="dropbtn"><a href="/pages/nakrebi.html">Nakrebi da Gundebi</a></span>
           </li>
           <li>
-            <span class="dropbtn">Events</span>
-            <div class="dropdown-content">
-              <a href="#">Rules and Code of Conduct</a>
-              <a href="#">Forums</a>
-              <a href="#">Books</a>
-            </div>
+            <span class="dropbtn"><a href="/pages/calendar.html">Event Calendar</a></span>
           </li>
           <li>
-            <span class="dropbtn">Club</span>
-            <div class="dropdown-content">
-              <a href="#">Backgammon Clubs</a>
-              <a href="#">Would like to meet</a>
-              <a href="#">Create a Club</a>
-            </div>
-          </li>
-          <li>
-            <span class="dropbtn">Members</span>
-            <div class="dropdown-content">
-              <a href="#">Data Privacy and Protetction Policy</a>
-              <a href="#">Membership Account</a>
-              <a href="#">Recorded Matches</a>
-            </div>
-          </li>
-          <li>
-            <span class="dropbtn">Club</span>
-            <div class="dropdown-content">
-              <a href="#">Backgammon Clubs</a>
-              <a href="#">Would like to Meet</a>
-              <a href="#">text to fill the space</a>
-            </div>
+            <span class="dropbtn"><a href="/pages/tournament.html">Tournaments</a></span>
           </li>
           <li id="rankButton">
-            <span class="dropbtn">Ratings</span>
-            <div class="dropdown-content">
-              <a href="#">Live Ratings</a>
-              <a href="#">Online Ratings</a>
-              <a href="#">UKBGF Top 100</a>
-            </div>
+            <span class="dropbtn">Rating</span>
           </li>
           <li>
-            <span class="dropbtn">About</span>
-            <div class="dropdown-content">
-              <a href="#">What is The UKBGF</a>
-              <a href="#">Contact Us</a>
-              <a href="#">Insurance Policy</a>
-            </div>
+            <span class="dropbtn"><a href="/pages/gallery.html">Gallery</a></span>
+          </li>
+          <li>
+            <span class="dropbtn"><a href="/pages/contact.html">Contact Us</a></span>
           </li>
         </ul>
       </div>
       <div class="news-table">
         <div class="news-header-content">
-        <div class="news-header">
-          <span>სიახლეები</span>
+          <div class="news-header">
+            <span>სიახლეები</span>
+          </div>
+          <div class="rating-header">
+            <span>სიახლეები</span>
+          </div>
         </div>
-        <div class="rating-header">
-          <span>სიახლეები</span>
-        </div>
-      </div>
         <div class="news-content">
           <div class="image">
             <img class="news-page-image" src="./images/winner.png" alt="" />
-            <div class="image-overlay">   
-                      
-                <a href="#" class="image-text"
-                  >Frank Frigo become Backgammon World Champion hosted by USBGF
-                  (United States BackGammon Federation) <span class="time">16:04 4 July 2024</span></a 
-                > 
-                
+            <div class="image-overlay">
+              <a href="#" class="image-text"
+                >Frank Frigo become Backgammon World Champion hosted by USBGF
+                (United States BackGammon Federation)
+                <span class="time">16:04 4 July 2024</span></a
+              >
             </div>
           </div>
 
@@ -388,80 +236,104 @@
               >
             </div>
             <div class="news-button-container">
-            <button class="button-27" role="button">View More</button>
-          </div>
+              <button class="button-27" role="button">View More</button>
+            </div>
           </div>
           <div class="rating-and-ads">
-            
-          <div class="top-rating">
-            
-            <div class="button-container-second">
-              <button class="table-header">text</button>
-              <button class="table-header">text</button>
-              <button class="table-header">text</button>
+            <div class="top-rating">
+              <div class="button-container-second">
+                <button class="table-header">text</button>
+                <button class="table-header">text</button>
+                <button class="table-header">text</button>
+              </div>
+
+              <table>
+                <tr>
+                  <th>№</th>
+                  <th>Full Name</th>
+                  <th>Rating</th>
+                </tr>
+                <tr>
+                  <td class="numericia">1</td>
+                  <td>
+                    <a class="rating-text" href="rating.html"
+                      >Freduchio Pastache</a
+                    >
+                  </td>
+                  <td>5469</td>
+                </tr>
+                <tr>
+                  <td class="numericia">2</td>
+                  <td>
+                    <a class="rating-text" href="rating.html"
+                      >Alessandro Verdi</a
+                    >
+                  </td>
+                  <td>4823</td>
+                </tr>
+                <tr>
+                  <td class="numericia">3</td>
+                  <td>
+                    <a class="rating-text" href="rating.html">Marta Rojas</a>
+                  </td>
+                  <td>5234</td>
+                </tr>
+                <tr>
+                  <td class="numericia">4</td>
+                  <td>
+                    <a class="rating-text" href="rating.html">Olivia Brown</a>
+                  </td>
+                  <td>5999</td>
+                </tr>
+                <tr>
+                  <td class="numericia">5</td>
+                  <td>
+                    <a class="rating-text" href="rating.html"
+                      >Leonardo D'Souza</a
+                    >
+                  </td>
+                  <td>4785</td>
+                </tr>
+                <tr>
+                  <td class="numericia">6</td>
+                  <td>
+                    <a class="rating-text" href="rating.html">Sofia Kim</a>
+                  </td>
+                  <td>5501</td>
+                </tr>
+                <tr>
+                  <td class="numericia">7</td>
+                  <td>
+                    <a class="rating-text" href="rating.html">Ethan Hunt</a>
+                  </td>
+                  <td>4932</td>
+                </tr>
+                <tr>
+                  <td class="numericia">8</td>
+                  <td>
+                    <a class="rating-text" href="rating.html">Emma Watson</a>
+                  </td>
+                  <td>6123</td>
+                </tr>
+                <tr>
+                  <td class="numericia">9</td>
+                  <td>
+                    <a class="rating-text" href="rating.html">Jack Sparrow</a>
+                  </td>
+                  <td>4876</td>
+                </tr>
+                <tr>
+                  <td class="numericia">10</td>
+                  <td>
+                    <a class="rating-text" href="rating.html">Lara Croft</a>
+                  </td>
+                  <td>5589</td>
+                </tr>
+              </table>
+              <div class="table-button-container">
+                <button class="rating-button" role="button">View More</button>
+              </div>
             </div>
-            
-            <table>
-    <tr>
-        <th>№</th>
-        <th>Full Name</th>
-        <th>Rating</th>
-    </tr>
-    <tr>
-        <td class="numericia">1</td>
-        <td><a class="rating-text" href="rating.html">Freduchio Pastache</a></td>
-        <td>5469</td>
-    </tr>
-    <tr>
-        <td class="numericia">2</td>
-        <td><a class="rating-text" href="rating.html">Alessandro Verdi</a></td>
-        <td>4823</td>
-    </tr>
-    <tr>
-        <td class="numericia">3</td>
-        <td><a class="rating-text" href="rating.html">Marta Rojas</a></td>
-        <td>5234</td>
-    </tr>
-    <tr>
-        <td class="numericia">4</td>
-        <td><a class="rating-text" href="rating.html">Olivia Brown</a></td>
-        <td>5999</td>
-    </tr>
-    <tr>
-        <td class="numericia">5</td>
-        <td><a class="rating-text" href="rating.html">Leonardo D'Souza</a></td>
-        <td>4785</td>
-    </tr>
-    <tr>
-        <td class="numericia">6</td>
-        <td><a class="rating-text" href="rating.html">Sofia Kim</a></td>
-        <td>5501</td>
-    </tr>
-    <tr>
-        <td class="numericia">7</td>
-        <td><a class="rating-text" href="rating.html">Ethan Hunt</a></td>
-        <td>4932</td>
-    </tr>
-    <tr>
-        <td class="numericia">8</td>
-        <td><a class="rating-text" href="rating.html">Emma Watson</a></td>
-        <td>6123</td>
-    </tr>
-    <tr>
-        <td class="numericia">9</td>
-        <td><a class="rating-text" href="rating.html">Jack Sparrow</a></td>
-        <td>4876</td>
-    </tr>
-    <tr>
-        <td class="numericia">10</td>
-        <td><a class="rating-text" href="rating.html">Lara Croft</a></td>
-        <td>5589</td>
-    </tr>
-</table>
-            <div class="table-button-container">
-              <button class="rating-button" role="button">View More</button>
-            </div>
-          </div>
           </div>
         </div>
         <div class="info-header-content">
@@ -473,52 +345,53 @@
           </div>
         </div>
         <div class="info-content">
-          
-          
-        <div class="carousel-container">
-    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="news-item">
-                <img src="images/png.png" alt="News Image" />
-                <span>1 Backgammon: The Oldest Known Board Game <a href="" class="news-viewmore">view more</a></span>
+          <div class="carousel-container">
+            <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="news-item">
+                  <img src="images/png.png" alt="News Image" />
+                  <span
+                    >1 Backgammon: The Oldest Known Board Game
+                    <a href="" class="news-viewmore">view more</a></span
+                  >
+                </div>
+                <div class="news-item">
+                  <img src="images/png.png" alt="News Image" />
+                  <span>2 The Strategy Behind Backgammon</span>
+                  <a href="" class="news-viewmore">view more</a>
+                </div>
+                <div class="news-item">
+                  <img src="images/png.png" alt="News Image" />
+                  <span>3 Backgammon Variants: Explore Different Versions</span>
+                  <a href="" class="news-viewmore">view more</a>
+                </div>
+                <div class="news-item">
+                  <img src="images/png.png" alt="News Image" />
+                  <span>4 Backgammon Tournaments: Test Your Skills</span>
+                  <a href="" class="news-viewmore">view more</a>
+                </div>
+                <div class="news-item">
+                  <img src="images/png.png" alt="News Image" />
+                  <span>5 Backgammon Strategy: Tips and Tricks</span>
+                  <a href="" class="news-viewmore">view more</a>
+                </div>
+                <div class="news-item">
+                  <img src="images/png.png" alt="News Image" />
+                  <span>6 Backgammon Strategy: Tips and Tricks</span>
+                  <a href="" class="news-viewmore">view more</a>
+                </div>
+              </div>
             </div>
-            <div class="news-item">
-                <img src="images/png.png" alt="News Image" />
-                <span>2 The Strategy Behind Backgammon</span>
-                <a href="" class="news-viewmore">view more</a>
-            </div>
-            <div class="news-item">
-                <img src="images/png.png" alt="News Image" />
-                <span>3 Backgammon Variants: Explore Different Versions</span>
-                <a href="" class="news-viewmore">view more</a>
-            </div>
-            <div class="news-item">
-                <img src="images/png.png" alt="News Image" />
-                <span>4 Backgammon Tournaments: Test Your Skills</span>
-                <a href="" class="news-viewmore">view more</a>
-            </div>
-            <div class="news-item">
-                <img src="images/png.png" alt="News Image" />
-                <span>5 Backgammon Strategy: Tips and Tricks</span>
-                <a href="" class="news-viewmore">view more</a>
-            </div>
-            <div class="news-item">
-                <img src="images/png.png" alt="News Image" />
-                <span>6 Backgammon Strategy: Tips and Tricks</span>
-                <a href="" class="news-viewmore">view more</a>
-            </div>
-        </div>
-    </div>
-    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
-</div>
+            <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+          </div>
 
-<div class="advertisment-table">
-  <img src="./images/something.png" alt="">
-  <img src="./images/something.png" alt="">
-  <img src="./images/something.png" alt="">
-  <img src="./images/fff1.png" alt="">
-</div>
+          <div class="advertisment-table">
+            <img src="./images/something.png" alt="" />
+            <img src="./images/something.png" alt="" />
+            <img src="./images/something.png" alt="" />
+            <img src="./images/fff1.png" alt="" />
+          </div>
 
           <div class="news-box-container">
             <div class="news-box">
@@ -578,12 +451,11 @@
               </div>
             </div>
           </div>
-
-          
         </div>
 
-        <div class="ranking" id="rank" style="display: none;">
+        <div class="ranking" id="rank" style="display: none">
           <span class="ranking-list">
+            <button class="ranking-counter">Rating Counter</button>
             <p>Ranking</p>
           </span>
           <table id="rankTable">
@@ -1097,44 +969,45 @@
             </tr>
           </table>
         </div>
-        
-           <div class="footer-container">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h4>About Us</h4>
-      <ul>
-        <li><a href="#">Company Information</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Services</h4>
-      <ul>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Blogs</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Services</h4>
-      <ul class="social-media">
-        <li><a href="#" class="social-icon facebook">Facebook</a></li>
-        <li><a href="#" class="social-icon twitter">Twitter</a></li>
-        <li><a href="#" class="social-icon wbgf">WBGF</a></li>
-        <li><a href="#" class="social-icon linkedin">LinkedIn</a></li>
-      </ul>
 
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Company Information</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Services</h4>
+              <ul class="social-media">
+                <li><a href="#" class="social-icon facebook">Facebook</a></li>
+                <li><a href="#" class="social-icon twitter">Twitter</a></li>
+                <li><a href="#" class="social-icon wbgf">WBGF</a></li>
+                <li><a href="#" class="social-icon linkedin">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              &copy; 2024 [your country] Backgammon Federation . All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="backgammon.js"></script>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2024 [your country] Backgammon Federation . All rights reserved.</p>
-  </div>
-</div>
-
-       
-    </div>
-    <script src="script.js"></script>
-    <script src="backgammon.js"></script>
   </body>
 </html>
